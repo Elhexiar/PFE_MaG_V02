@@ -3,7 +3,6 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "InHandCard.h"
 #include "Card.generated.h"
 
 /**
@@ -30,7 +29,7 @@ public:
 	FText Description;
 
 	UPROPERTY(EditAnywhere,BlueprintReadWrite)
-	TSubclassOf<AInHandCard> InHandActorClass;
+	AActor* InHandActor;
 
 	
 	
