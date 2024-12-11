@@ -20,16 +20,16 @@ public:
 	UCard();
 	virtual ~UCard() override;
 
-	UPROPERTY(EditAnywhere,BlueprintReadWrite)
+	UPROPERTY(EditAnywhere,BlueprintReadWrite, meta=(ExposeOnSpawn=true))
 	FString Name;
 
-	UPROPERTY(EditAnywhere,BlueprintReadWrite)
+	UPROPERTY(EditAnywhere,BlueprintReadWrite, meta=(ExposeOnSpawn=true))
 	int32 Cost;
 
-	UPROPERTY(EditAnywhere,BlueprintReadWrite)
+	UPROPERTY(EditAnywhere,BlueprintReadWrite, meta=(ExposeOnSpawn=true))
 	FText Description;
 
-	UPROPERTY(EditAnywhere,BlueprintReadWrite)
+	UPROPERTY(EditAnywhere,BlueprintReadWrite, meta=(ExposeOnSpawn=true))
 	TSubclassOf<AInHandCard> InHandActorClass;
 
 	
